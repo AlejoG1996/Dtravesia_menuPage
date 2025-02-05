@@ -1,3 +1,11 @@
+# D'travesia gastro bar - tienda
+Hola!
+En este repositorio encontraras todo el codigo de una tienda online para un restaurante realizado con React js y diferentes librerías. 
+
+Para empezar solo debes clonar este repositorio (git clone), instalar sus dependencias (npm i) y ejecutar la aplicación (npm start).
+
+La rama principal contiene el código con el que empezamos. En las demás comits encontrarás el código de los avances y finalmente el deploy de la aplicación.
+
 ## Librerias usadas
 
 - react-router-dom

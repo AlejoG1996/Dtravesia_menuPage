@@ -174,13 +174,13 @@ function ModalCar() {
                                                 <div key={index} className="bg-gray-50 p-4 rounded-md shadow-md mb-4 mr-2 ml-2">
                                                     <div className="flex items-center justify-between">
 
-                                                        <div className="flex items-center space-x-2 w-[70%] text-gray-600 text-sm md:text-lg">
+                                                        <div className="flex items-center space-x-2 w-[70%] text-gray-600  md:text-lg text-xs">
                                                             <i className="fa-solid fa-utensils"></i>
                                                             <span className="uppercase">{product.name}</span>
                                                         </div>
 
 
-                                                        <span className="w-[20%] text-center text-gray-700 text-sm md:text-lg pr-6">${new Intl.NumberFormat("es-CO").format(product.total)}</span>
+                                                        <span className="w-[20%] text-center text-gray-700  text-xs md:text-lg pr-6">${new Intl.NumberFormat("es-CO").format(product.total)}</span>
 
 
 
@@ -209,12 +209,12 @@ function ModalCar() {
                                     <div className=" h-[30%] md:h-[30%] md:p-2 mr-2 ml-2">
                                         <div className="flex bg-gray-100 p-4 mt-4 md:mt-0 rounded-md shadow-md mb-4 h-[100px]  w-full lg:ml-auto justify-center items-center">
                                             <div className="w-1/2 text-center">
-                                                <p className="text-gray-600 text-xl md:text-2xl font-semibold"># PRODUCTOS</p>
-                                                <p className="text-gray-600 text-xl md:text-2xl font-semibold">{addProductsBuy.length}</p>
+                                                <p className="text-gray-600 text-sm md:text-2xl font-semibold"># PRODUCTOS</p>
+                                                <p className="text-gray-600 text-sm md:text-2xl font-semibold">{addProductsBuy.length}</p>
                                             </div>
                                             <div className="w-1/2 text-center">
-                                                <p className="text-gray-600 text-xl md:text-2xl font-semibold">TOTAL A PAGAR</p>
-                                                <p className="text-gray-600 text-xl md:text-2xl font-semibold">${new Intl.NumberFormat("es-CO").format(totalSum)}</p>
+                                                <p className="text-gray-600 text-sm md:text-2xl font-semibold">TOTAL A PAGAR</p>
+                                                <p className="text-gray-600 text-sm md:text-2xl font-semibold">${new Intl.NumberFormat("es-CO").format(totalSum)}</p>
                                             </div>
                                         </div>
 

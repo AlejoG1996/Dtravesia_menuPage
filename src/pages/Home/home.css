@@ -1,0 +1,135 @@
+/* fondo del header */
+#Header {
+  background-image: linear-gradient(rgb(31, 123, 57, 0.7), rgba(16, 76, 32, 0.8)), url('/public/bg_home.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  width: 100vw;
+  clip-path: polygon(73% 0, 100% 0%, 100% 100%, 48% 100%);
+  box-shadow: 0px 0px 20px 16px rgba(17, 17, 26, 0.08);
+}
+
+/* munu mobile */
+#Navmobile {
+  background-image: radial-gradient(circle, #1f7b39, #18652e, #125024, #0c3c1a, #072910);
+}
+
+/* forma irregular header */
+svg {
+  filter: drop-shadow(0 -100px 40px rgba(0, 0, 0, 0.2));
+}
+
+.shadow-custom {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+/* carrusel categoria */
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  padding-bottom: 30px;
+}
+
+
+.swiper-pagination-bullet-active {
+  background-color: #2E8B57;
+}
+
+/* footer */
+.ts-footer {
+  position: relative;
+  background-color: #000;
+  padding-top: 80px;
+  background-image: url('/public/fondo_footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ts-footer:before {
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  top: -10px;
+  content: "";
+  background-image: url('/public/foot_bg.png');
+  height: 40px;
+  background-repeat: no-repeat;
+}
+
+.cont_product {
+  background: linear-gradient(90deg, rgba(250, 250, 250, 1), rgb(200, 199, 199));
+  background-size: 400% 400%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+}
+
+.buy_button {
+  background: linear-gradient(90deg, rgba(250, 250, 250, 1), rgb(48, 46, 46));
+  background-size: 400% 400%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+}
+
+/*animacion loading*/
+@keyframes loadingAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.custom-scroll_m {
+  overflow-y: auto;
+}
+
+/* Ocultar la barra de desplazamiento pero permitir el scroll */
+.custom-scroll_m::-webkit-scrollbar {
+  /* display: none; */
+ 
+}
+
+.custom-scroll_m::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.custom-scroll_m::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+.custom-scroll_m::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.custom-scroll_m::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.custom-scroll_m::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.custom-scroll_m::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+
+/* Aplica custom-scroll solo en pantallas grandes (desde 1024px en adelante) */
+@media (min-width: 1024px) {
+  .custom-scroll {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  /* Ocultar la barra de desplazamiento pero permitir el scroll */
+  .custom-scroll::-webkit-scrollbar {
+    display: none;
+  }
+}

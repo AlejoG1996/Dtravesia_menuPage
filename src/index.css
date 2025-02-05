@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* animaciones modal */
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes scaleIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes scaleOut {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+
+  .bg-fadeIn{
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-iteration-count: 1;
+  }
+
+  .bg-fadeOut{
+    animation: fadeOut 0.5s ease-in forwards;
+    animation-iteration-count: 1;
+  }
+
+  .modal-sacaleIn{
+    animation: scaleIn 0.3s ease-in forwards;
+    animation-iteration-count: 1;
+  }
+
+  .modal-sacaleOut{
+    animation: scaleOut 0.3s ease-in forwards;
+    animation-iteration-count: 1;
+  }
